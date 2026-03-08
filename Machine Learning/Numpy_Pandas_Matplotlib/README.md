@@ -14,6 +14,8 @@
 
 ### 更多信息
 
+- 项目学习链接 [Bilibili 零基础数据分析教程](https://www.bilibili.com/video/BV1D9GLzyEL6/)
 - 详细的笔记请参考 [尚硅谷学习课件](尚硅谷数据分析课件.pptx)
 - 项目实战请参考 [房地产市场调研与价值评估](./Projects/README.md)
+
 
