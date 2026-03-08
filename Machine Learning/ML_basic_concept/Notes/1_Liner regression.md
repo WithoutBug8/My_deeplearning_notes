@@ -146,12 +146,15 @@ MSE vs MAE 对离群值的影响：
 - 太大 → 震荡 / 发散（损失上升）
 
 ![合适学习率：快速收敛](https://developers.google.com/static/machine-learning/crash-course/linear-regression/images/correct-lr.png)
+
 合适学习率：快速收敛
 
 ![学习率过小：缓慢收敛](https://developers.google.com/static/machine-learning/crash-course/linear-regression/images/small-lr.png)
+
 学习率过小：缓慢收敛
 
 ![学习率过大：震荡或发散](https://developers.google.com/static/machine-learning/crash-course/linear-regression/images/high-lr.png)
+
 学习率过大：震荡或发散
 
 ### 4.2 批次大小（Batch Size）
