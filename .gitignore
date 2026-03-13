@@ -99,3 +99,9 @@ cover/
 
 # macOS metadata (recursively)
 **/.DS_Store
+
+# tensorboard
+runs/
+
+# predictions 这里忽略实验输出
+pred.csv
