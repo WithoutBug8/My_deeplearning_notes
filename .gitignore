@@ -96,7 +96,6 @@ cover/
 *.pkl
 *.jsonl
 *.tsv
-*.csv
 
 # macOS metadata (recursively)
 **/.DS_Store
