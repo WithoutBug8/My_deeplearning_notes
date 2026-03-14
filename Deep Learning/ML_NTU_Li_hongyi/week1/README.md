@@ -14,3 +14,5 @@
     - [Colab使用](./tutorial/Colab%20Tutorial%202022.pdf)
     - 自己补充的知识 [python中类的使用](./tutorial/Python中class的使用教程.md)
 5. 作业 [Homework](./homework/HW01.pdf)
+6. 补充材料 [Extra Materials](./Extra%20Material)
+    - 反向传播算法 [Backward Propagation](./Extra%20Material/Backward%20Propagation.pdf) 

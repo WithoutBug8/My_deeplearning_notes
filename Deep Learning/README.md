@@ -3,7 +3,7 @@
 ### Index
 
 1. 尚硅谷-深度学习项目实战 [仓库点击跳转](./Pytorch_Basic_Concept_DL)
-2. 李沐-动手学深度学习 [仓库点击跳转](./Dive into Deep Learning)
+2. 李沐-动手学深度学习 [仓库点击跳转](./Dive%20into%20Deep%20Learning)
 3. 李宏毅-机器学习 [仓库点击跳转](./ML_NTU_Li_hongyi)
 
 
