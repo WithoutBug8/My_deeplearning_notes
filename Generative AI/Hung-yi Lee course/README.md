@@ -7,3 +7,4 @@
 ### Index
 
 1. 第一周 [Week1](./week1)
+2. 补充材料 [OpenClaw](./OpenClaw)
