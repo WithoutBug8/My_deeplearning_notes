@@ -3,3 +3,5 @@
 - 课程链接 [黑马程序员新版Linux零基础快速入门到精通](https://www.bilibili.com/video/BV1n84y1i7td/)
 
 ### Index
+
+1. 第一节 [Linux文件目录](./1_Linux文件目录.md)
