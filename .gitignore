@@ -105,3 +105,5 @@ runs/
 
 # predictions 这里忽略实验输出
 pred.csv
+# 忽略所有CSV文件
+*.csv
