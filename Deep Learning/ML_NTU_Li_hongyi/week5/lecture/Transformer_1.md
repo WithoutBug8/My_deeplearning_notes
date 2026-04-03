@@ -27,6 +27,10 @@ Transformer 是一個典型的 Seq2seq 模型，主要由 **編碼器（Encoder�
 ### A. 自注意力機制 (Self-Attention)
 *   **功能**：考慮整個序列的資訊，輸出經過加權後的向量序列。
     *   举个例子：当你输入一个序列，比如苹果，机器是不知道到底是吃的苹果还是指苹果手机，所以他需要参考输出的全部内容才能判断这个“苹果”是什么意思
+    * $attention = softmax(QK^T / sqrt(d)) V$  	
+    - Query (Q) 
+    - Key (K)
+    - value (V)
 
 *   **多頭注意力 (Multi-head Attention)**：Transformer 實際使用的是多頭版本，能學習不同子空間的資訊。
     *   在**Self-Attention**上更进一步，不仅仅是看一遍，而是带着好几双眼睛从都多个维度观察输入的向量序列
