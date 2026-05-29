@@ -18,7 +18,7 @@ $RECYCLE.BIN/
 .nfs*
 
 # ------------------------------
-# IDE / Editor
+# IDE / Editor / AI Coding tools
 # ------------------------------
 # PyCharm / IntelliJ IDEA
 .idea/
@@ -29,6 +29,13 @@ $RECYCLE.BIN/
 
 # Jupyter / Notebook checkpoints
 .ipynb_checkpoints/
+
+# AI Coding tools (personal settings)
+.claude/
+.cursor/
+.augment/
+.trae/
+.windsurf/
 
 # ------------------------------
 # Python
@@ -78,6 +85,29 @@ coverage.xml
 cover/
 
 # ------------------------------
+# Deep Learning models & data
+# ------------------------------
+# Model checkpoints & weights
+*.pth
+*.pt
+*.pth.tar
+*.ckpt
+*.h5
+*.hdf5
+*.keras
+*.onnx
+*.pb
+checkpoints/
+
+# Experiment tracking
+wandb/
+lightning_logs/
+mlruns/
+
+# Triton cache
+.triton/
+
+# ------------------------------
 # Logs / temp
 # ------------------------------
 *.log
@@ -94,16 +124,10 @@ cover/
 *.sqlite3
 *.db
 *.pkl
-*.jsonl
-*.tsv
 
-# macOS metadata (recursively)
-**/.DS_Store
-
-# tensorboard
+# TensorBoard
 runs/
 
-# predictions 这里忽略实验输出
+# Experiment outputs
 pred.csv
-# 忽略所有CSV文件
 *.csv
