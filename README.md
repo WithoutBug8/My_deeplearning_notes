@@ -11,6 +11,7 @@
 3. 生成式AI[Generative AI](./Generative%20AI)
 4. 生成式AI时代下的机器学习[GenAI_ML](./NTU_Lee_HungYi_ML_GenAI_2025)
 4. Linux[基础操作指令](./Linux_basic)
+5. Vibe Codeing[一些入门指南](./Vibe_coding/)
 
 ### Plan
 
