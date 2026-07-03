@@ -27,5 +27,8 @@ LangChain 是一个 LLM 应用开发框架，核心思路是把 LLM 与外部工
 ---
 
 ## 目录
-1. 
+1. 环境变量的使用说明[点击跳转](./Notes/1_环境变量保护APIKEY.md)
+2. Ollama简介[点击跳转](./Notes/2_Ollama简介.md)
+3. OpenAI库的使用说明[点击跳转](./Notes/3_OpenAI库的调用.md)
+
 
