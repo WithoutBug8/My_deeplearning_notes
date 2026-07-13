@@ -47,9 +47,43 @@ Embedding 模型的作用是把文本变成向量，也就是一串浮点数。�
 
 提示词优化在模型应用中非常重要，LangChain中提供了一个PromptTemplate的类，用来协助优化提示词。
 - 举个例子来说，你构建了一个通用的提示词模板，里面有一些内容是变量，你可以进行变量的注入，更具不同的变量生成不同的提示词
+- 有[PromptTemplate](../Codes/08_langchain的通用提示词模板.py)，[FewShotPromptTemplate](../Codes/09_langchain的通用提示词模板few_shot%20copy.py), [ChatPromptTemplate](../Codes/10_langchain的通用提示词模板Chat.py),具体请参考代码示例
+- 模板类都可以调用`format`和`invoke`方法
+
+### PromptTemplate（提示词模板）简要总结
+
+* **Prompt 优化对大模型应用非常重要**，LangChain 提供 `PromptTemplate` 类帮助管理和复用提示词。
+* PromptTemplate 可以创建**带变量的通用提示词模板**，通过变量注入，根据不同输入生成不同 Prompt。
+* 例如：
+
+```python
+template = "你是一名{role}，请回答：{question}"
+```
+
+传入不同变量即可生成不同提示词。
+
+---
+
+### PromptTemplate 常用方法
+
+| 方法         | 作用                                            |
+| ---------- | --------------------------------------------- |
+| `format()` | 填充模板变量，返回普通字符串                                |
+| `invoke()` | 使用 LangChain Runnable 调用方式填充变量，返回 PromptValue |
+
+### format 和 invoke 的相同点
+
+* 都可以根据输入变量填充 PromptTemplate 中的占位符。
+* 都会生成最终的提示词内容。
+* 都支持传入字典形式的变量。
 
 
+### format 和 invoke 的区别
 
-
-
+| 对比   | format()       | invoke()                  |
+| ---- | -------------- | ------------------------- |
+| 返回类型 | 普通字符串 (`str`)  | LangChain 的 `PromptValue` |
+| 使用场景 | 查看或手动处理 Prompt | 推荐用于 LangChain Chain 调用   |
+| 接入模型 | 需要手动传入 LLM     | 可以直接连接后续 Runnable         |
+| 调用方式 | Python 字符串格式化  | LangChain 标准调用接口          |
 
