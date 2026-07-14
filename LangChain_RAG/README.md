@@ -27,8 +27,22 @@ LangChain 是一个 LLM 应用开发框架，核心思路是把 LLM 与外部工
 ---
 
 ## 目录
-1. 环境变量的使用说明[点击跳转](./Notes/1_环境变量保护APIKEY.md)
-2. Ollama简介[点击跳转](./Notes/2_Ollama简介.md)
-3. OpenAI库的使用说明[点击跳转](./Notes/3_OpenAI库的调用.md)
+1. [环境变量保护 API Key](./Notes/01_环境变量保护APIKEY.md)
+2. [Ollama 简介](./Notes/02_Ollama简介.md)
+3. [OpenAI 库的调用](./Notes/03_OpenAI库的调用.md)
+4. [OpenAI 流式输出](./Notes/04_OpenAI流式输出.md)
+5. [OpenAI 调用附带历史消息](./Notes/05_OpenAI调用附带历史消息.md)
+6. [大模型提示词工程指南](./Notes/06_大模型提示词工程指南.md)
+7. [JSON 数据格式](./Notes/07_JSON数据格式.md)
+8. [LangChain 与 RAG 简介](./Notes/08_LangChain&RAG简介.md)
+9. [RAG 中的向量和余弦相似度](./Notes/09_RAG中的向量和余弦相似度.md)
+10. [LangChain 调用](./Notes/10_LangChain调用.md)
+11. [Chain 链](./Notes/11_Chain链.md)
+12. [Memory 历史会话记忆管理](./Notes/12_Memory历史会话记忆管理.md)
+13. [向量存储技术](./Notes/13_向量存储技术.md)
 
 
+
+
+## 注意
+很多包已经被废弃了，如果代码运行不起来的话，属于正常现象
