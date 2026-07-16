@@ -88,7 +88,7 @@ class KnowledgeBaseService(object):
             metadatas=[metadata for _ in knowledge_chunks],
         )
 
-        #
+        # 调用保存函数
         save_md5(md5_hex)
 
         return "[成功]内容已经成功载入向量库"
