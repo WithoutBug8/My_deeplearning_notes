@@ -49,18 +49,20 @@ class KnowledgeBaseService(object):
         # 如果文件夹不存在则创建，如果存在则跳过
         os.makedirs(config.persist_directory, exist_ok=True)
 
+        # 向量存储的实例 Chroma向量库对象
         self.chroma = Chroma(
-            collection_name=config.collection_name,  # 数据库的表名
-            embedding_function=DashScopeEmbeddings(model="text-embedding-v4"),
+            collection_name=config.collection_name,      # 数据库的表名
+            embedding_function=DashScopeEmbeddings(model="text-embedding-v4"),  # 嵌入模型
             persist_directory=config.persist_directory,  # 数据库本地存储文件夹
-        )  # 向量存储的实例 Chroma向量库对象
+        )
 
+        # 文本分割器
         self.spliter = RecursiveCharacterTextSplitter(
-            chunk_size=config.chunk_size,  # 分割后的文本段最大长度
+            chunk_size=config.chunk_size,        # 分割后的文本段最大长度
             chunk_overlap=config.chunk_overlap,  # 连续文本段之间的字符重叠数量
-            separators=config.separators,  # 自然段落划分的符号
-            length_function=len,  # 使用Python自带的len函数做长度统计的依据
-        )  # 文本分割器的对象
+            separators=config.separators,        # 自然段落划分的符号
+            length_function=len,                 # 使用Python自带的len函数做长度统计的依据
+        )
 
     def upload_by_str(self, data: str, filename):
         """将传入的字符串，进行向量化，存入向量数据库中"""
@@ -70,6 +72,7 @@ class KnowledgeBaseService(object):
         if check_md5(md5_hex):
             return "[跳过]内容已经存在知识库中"
 
+        # 文本分割的阈值
         if len(data) > config.max_split_char_number:
             knowledge_chunks: list[str] = self.spliter.split_text(data)
         else:
@@ -88,7 +91,7 @@ class KnowledgeBaseService(object):
             metadatas=[metadata for _ in knowledge_chunks],
         )
 
-        # 调用保存函数
+        # 保存数据到md5文件中
         save_md5(md5_hex)
 
         return "[成功]内容已经成功载入向量库"
