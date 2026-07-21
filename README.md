@@ -13,7 +13,6 @@
 4. Linux[基础操作指令](./Linux_basic)
 5. Vibe Codeing[一些入门指南](./Vibe_coding/)
 6. LangChain_RAG[项目入门实战](./LangChain_RAG/)
-7. 心理统计学[入门](./Psychological%20Statistics/)
 
 ### Plan
 
