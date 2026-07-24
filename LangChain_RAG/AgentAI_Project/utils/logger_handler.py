@@ -9,7 +9,7 @@ LOG_ROOT = get_abs_path("logs")
 # 确保日志的目录存在
 os.makedirs(LOG_ROOT, exist_ok=True)
 
-# 日志的格式配置  error info debug
+# 日志的格式配置  error错误日志 info正常信息 debug
 DEFAULT_LOG_FORMAT = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s'
 )
@@ -17,8 +17,8 @@ DEFAULT_LOG_FORMAT = logging.Formatter(
 
 def get_logger(
         name: str = "agent",
-        console_level: int = logging.INFO,
-        file_level: int = logging.DEBUG,
+        console_level: int = logging.INFO,  # 默认级别
+        file_level: int = logging.DEBUG,    # 文件级别
         log_file = None,
 ) -> logging.Logger:
     logger = logging.getLogger(name)

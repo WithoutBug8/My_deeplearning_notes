@@ -22,7 +22,7 @@ def get_project_root() -> str:
 def get_abs_path(relative_path: str) -> str:
     """
     传递相对路径，得到绝对路径
-    :param relative_path: 相对领
+    :param relative_path: 相对路径
     :return: 绝对路径
     """
     project_root = get_project_root()
